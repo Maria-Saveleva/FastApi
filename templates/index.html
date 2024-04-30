@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        2.
+            Напишите программу, которая считывает длины двух катетов в
+            прямоугольном треугольнике и выводит его площадь. Каждое число
+            записано в отдельной строке.
+    </p>
+    <form>
+        <h1>Рассчёт площади</h1>
+        <input name="side_1" type="number" step="0.01" min="0" placeholder="Первый катет..." value='{{ side_1 }}'>
+        <input name="side_2" type="number" step="0.01" min="0" placeholder="Второй катет..." value='{{ side_2 }}'>
+        <input type="submit" value="Рассчитать">
+    </form>
+
+    {% if answer %}
+    <h2>Ответ: {{ answer }}</h2>
+    {% endif %}
+</body>
+</html>
